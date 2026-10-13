@@ -1,0 +1,144 @@
+DNS
+
+Frame 32917: Packet, 134 bytes on wire (1072 bits), 134 bytes captured (1072 bits) on interface \Device\NPF_{CAC91B9D-C995-43D1-A7C2-0296367DCD7C}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{CAC91B9D-C995-43D1-A7C2-0296367DCD7C})
+        Interface name: \Device\NPF_{CAC91B9D-C995-43D1-A7C2-0296367DCD7C}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Oct 13, 2026 17:01:34.736697400 SE Asia Standard Time
+    UTC Arrival Time: Oct 13, 2026 10:01:34.736697400 UTC
+    Epoch Arrival Time: 1791885694.736697400
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 1.000 microseconds]
+    [Time delta from previous displayed frame: 1.000 microseconds]
+    [Time since reference or first frame: 2 minutes, 9.370382800 seconds]
+    Frame Number: 32917
+    Frame Length: 134 bytes (1072 bits)
+    Capture Length: 134 bytes (1072 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:dns]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: VMware_9f:5a:c2 (00:50:56:9f:5a:c2), Dst: 1e:a8:2d:f9:08:b7 (1e:a8:2d:f9:08:b7)
+    Destination: 1e:a8:2d:f9:08:b7 (1e:a8:2d:f9:08:b7)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: VMware_9f:5a:c2 (00:50:56:9f:5a:c2)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 168]
+Internet Protocol Version 4, Src: 10.252.128.2, Dst: 10.252.128.51
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 120
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x2453 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.252.128.2
+    Destination Address: 10.252.128.51
+    [Stream index: 137]
+Transmission Control Protocol, Src Port: 53, Dst Port: 63979, Seq: 1, Ack: 35, Len: 80
+    Source Port: 53
+    Destination Port: 63979
+    [Stream index: 46]
+    [Stream Packet Number: 8]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+        ..0. .... = RST: Absent
+        ...1 .... = FIN: Present
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ·FDASS]
+    [TCP Segment Len: 80]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 2755336955
+    [Next Sequence Number: 81    (relative sequence number)]
+    Acknowledgment Number: 35    (relative ack number)
+    Acknowledgment number (raw): 3960428229
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 518
+    [Calculated window size: 66304]
+    [Window size scaling factor: 128]
+    Checksum: 0x0329 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 26.702200 milliseconds]
+        [Time since previous frame in this TCP stream: 4.400 microseconds]
+    [SEQ/ACK analysis]
+        [iRTT: 9.391700 milliseconds]
+        [Bytes in flight: 80]
+        [Bytes sent since last PSH flag: 80]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (80 bytes)
+    [PDU Size: 80]
+Domain Name System (response)
+    Length: 78
+    Transaction ID: 0x4f9d
+    Flags: 0x8580 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .1.. .... .... = Authoritative: Server is an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 1
+    Additional RRs: 0
+    Queries
+        www.pens.ac.id: type HTTPS, class IN
+            Name: www.pens.ac.id
+            [Name Length: 14]
+            [Label Count: 4]
+            Type: HTTPS (65) (HTTPS Specific Service Endpoints)
+            Class: IN (0x0001)
+    Authoritative nameservers
+        pens.ac.id: type SOA, class IN, mname ns1.pens.ac.id
+            Name: pens.ac.id
+            Type: SOA (6) (Start Of a zone of Authority)
+            Class: IN (0x0001)
+            Time to live: 300 (5 minutes)
+            Data length: 34
+            Primary name server: ns1.pens.ac.id
+            Responsible authority's mailbox: admin.pens.ac.id
+            [Responsible authority's mailbox name: admin@pens.ac.id]
+            Serial Number: 2026101301
+            Refresh Interval: 10800 (3 hours)
+            Retry Interval: 3600 (1 hour)
+            Expire limit: 604800 (7 days)
+            Minimum TTL: 86400 (1 day)
+    [Request In: 32893]
+    [Time: 16.156900 milliseconds]
